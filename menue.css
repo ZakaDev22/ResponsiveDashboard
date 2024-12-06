@@ -1,0 +1,89 @@
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid greenyellow;
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 100%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+.profile h2 {
+
+    font-size: 20px;
+}
+
+.menue {
+
+    background-image: linear-gradient(to right, #123, #321);
+    width: 60px;
+    overflow: hidden;
+    height: 100vh;
+    padding: 20px;
+    border-radius: 0 25px 25px 0;
+    transition: 320ms ease-in;
+}
+
+.menue:hover {
+    width: 260px;
+    cursor: e-resize;
+}
+
+ul {
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+
+ul li a {
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    transition: all 750ms ease-in-out;
+}
+
+ul li a:hover,
+.ActiveButton,
+.data-info .box:hover,
+table td:hover {
+
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.Log-out {
+
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.Log-out a {
+    background-color: rgb(255, 0, 0, 0.3);
+}
+
+.Log-out a:hover {
+    background-color: rgb(255, 0, 0, 1);
+}
+
+ul li a i {
+    font-size: 30px;
+    color: aqua;
+}

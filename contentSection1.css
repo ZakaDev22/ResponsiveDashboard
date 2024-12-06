@@ -1,0 +1,22 @@
+
+.tilte-info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #1e1e, #1e1ddd55);
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    transition: 500ms ease;
+}
+
+.tilte-info:hover  {
+
+    background-image: linear-gradient(to top, red, yellow);
+    font-size: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+
+}

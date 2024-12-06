@@ -1,0 +1,40 @@
+
+table {
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    border: 3px solid;
+    border-spacing: 4px;
+}
+
+td,
+th {
+    height: 40px;
+    background-color: #123;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+th {
+    background-color: #0080ff;
+}
+
+table .study-time-line {
+
+    background-color: green;
+}
+
+table .salary {
+
+    background-color: yellow;
+    color: black;
+}
+
+table .study-time-line,
+table .salary {
+
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 8px;
+    transition: 850ms ease-in;
+}
