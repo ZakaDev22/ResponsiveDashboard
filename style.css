@@ -3,6 +3,8 @@
     padding: 0;
     margin: 0;
     color: white;
+    font-family: cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 5px 5px 5px black;
 }
 
 body {
@@ -10,21 +12,51 @@ body {
     height: 100vh;
 }
 
+.profile-image
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid greenyellow;
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 100%;
+}
+
 .profile {
-    display: none;
+     display: flex;
+     align-items: center;
+     gap: 30px;
+}
+
+.profile h2{
+
+    font-size: 20px;
 }
 
 .menue {
 
     background-image: linear-gradient(to right,#123,#321);
-    width: 35%;
+    width: 60px;
+    overflow: hidden;
     height: 100vh;
     padding: 20px;
-    border-radius: 0 20px;
+    border-radius: 0 25px;
+    transition: 320ms ease-in;
+}
+
+.menue:hover {
+    width: 260px;
+    cursor: e-resize;
 }
 
 ul {
     list-style: none;
+    position: relative;
+    height: 95%;
 }
 
 ul li a {
@@ -43,4 +75,24 @@ ul li a:hover, .ActiveButton {
 
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.Log-out {
+
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.Log-out a {
+    background-color: rgb(255, 0, 0,0.3);
+}
+
+.Log-out a:hover {
+    background-color: rgb(255, 0, 0, 1);
+}
+
+ul li a i {
+    font-size: 30px;
+    color: aqua;
 }
